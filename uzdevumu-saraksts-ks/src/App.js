@@ -1,3 +1,5 @@
+import React from 'react';
+import './App.css';
 function App() {
   const uzdevumi = [{
     "userId": 1,
@@ -35,6 +37,23 @@ function App() {
     "title": "qui ullam ratione quibusdam voluptatem quia omnis",
     "completed": false
   }]
+
+const userJSX = uzdevumi.map((uzdevums, indekss) => (
+  <div key={indekss}>
+    
+    <h2>{uzdevums.title}</h2>
+    
+    
+  </div>
+));
+
+return (
+  <div>
+    {userJSX}
+  </div>
+);
 }
 
+
+  
 export default App;
