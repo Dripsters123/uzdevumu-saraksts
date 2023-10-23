@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import Check from './Check';
+
 function App() {
   const uzdevumi = [{
     "userId": 1,
@@ -50,6 +52,7 @@ const userJSX = uzdevumi.map((uzdevums, indekss) => (
 return (
   <div>
     {userJSX}
+    <Check checkValue={false}/>
   </div>
 );
 }
